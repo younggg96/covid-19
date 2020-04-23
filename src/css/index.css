@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    font-family: -apple-system, 'Press Start 2P', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+}

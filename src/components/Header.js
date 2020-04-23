@@ -10,14 +10,11 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-
-
-function Header(props) {
+function Header() {
     const classes = useStyles();
-
     return (
         <React.Fragment>
-            <AppBar color="primary" position="fixed">
+            <AppBar color="primary">
                 <Toolbar>
                     <Box fontWeight="700">
                         Covid 19
