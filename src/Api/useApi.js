@@ -10,6 +10,6 @@ export function useApi(path, initData = null) {
             setDate(response.data);
         }
         getData();
-    }, [])
+    }, [path])
     return data;
 }

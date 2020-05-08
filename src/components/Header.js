@@ -1,29 +1,21 @@
 import React from 'react'
-import headerImg from '../assets/imgs/CoronaVirusHeader.jpg'
-import { AppBar, Toolbar, Box } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, Box, Typography } from '@material-ui/core'
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        width: "100%",
-    }
-}));
+
 
 function Header() {
-    const classes = useStyles();
     return (
         <React.Fragment>
-            <AppBar color="primary">
+            <AppBar color="primary" position="static">
                 <Toolbar>
-                    <Box fontWeight="700">
-                        Covid 19
-                    </Box>
+                    <Typography variant="h3">
+                        <Box fontWeight="700">
+                            Covid 19
+                        </Box>
+                    </Typography>
                 </Toolbar>
             </AppBar>
-            <div>
-                <img src={headerImg} alt="" className={classes.root} />
-            </div>
         </React.Fragment>
     );
 }
